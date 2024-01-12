@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/5fd2c40628.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Arulmurugan Assignment</title>
+</head>
+
+<body>
+    <div class = "main-container">
+        <div class = "side-bar">
+            <div>
+                <h1 class = "side-bar-heading">category</h1>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('sectionMen')">Men</p>
+                    <p class="tab-links " onclick="opentab('sectionWomen')">Women</p>
+                    <p class="tab-links" onclick="opentab('sectionkids')">Kids</p>
+                </div>
+            </div>
+            <div>
+                <h1 class = "side-bar-heading">Price</h1>
+                <div >
+                    <input type ="checkbox"  id = "all-price" />
+                    <label for = "all-price" class = "price-amt">All Price</label>
+                    <br>
+                    <input type ="checkbox" id = "abfive" />
+                    <label for = "abfive" class = "price-amt">Rs.0 to 500</label>
+                    <br>
+                    <input type ="checkbox" id = "fivetothous" />
+                    <label for = "fivetothous" class = "price-amt">Rs.500 to 1000</label>
+                    <br>
+                    <input type ="checkbox" id = "thoustothfiv" />
+                    <label for = "thoustothfiv" class = "price-amt">Rs.1000 to 2000</label>
+                    <br>
+                    <input type ="checkbox" id = "moretwothous" />
+                    <label for = "moretwothous" class = "price-amt">Rs.2000 and above</label>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+        <div class="bg-container">
+            <h1 class="am-name"><span class="color-letter">AM</span> Trend<span class="color-letter">z..</span></h1>
+            <h3 class="choice">SELECT YOUR CHOICE</h3>
+            <div class="tab-contents  active-tab" id="sectionMen"></div>
+            <div class="tab-contents  " id="sectionWomen"></div>
+            <div class="tab-contents" id="sectionkids"></div>
+            <hr >
+            <h1 class="choice cart-title">Cart</h1>
+            <div id = "card-items"></div>
+            <hr >
+            <h1 class="choice cart-title">Cart Summary</h1>
+            <div class = "price-section">
+                <h1>Average Product Price</h1>
+                <h1 id = "avg-price">Rs.0</h1>
+            </div>
+            <div class = "price-section">
+                <h1>Delivery Charge</h1>
+                <h1>Rs.100</h1>
+            </div>
+            <hr>
+            <div class = "price-section">
+                <h1>Total Amount</h1>
+                <h1 id = "total-amount">Rs.0</h1>
+            </div>
+
+        </div>
+    </div>
+   <script src = "./script.js"></script> 
+</body>
+
+</html>
